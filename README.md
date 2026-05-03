@@ -13,6 +13,10 @@ the save system keeps currentFilePath in the main process rather than trying to 
 dropdowns animate using transform: scaleY() with transform-origin: top center instead of height or max-height. this keeps the animation on the gpu and avoids layout recalculations on every frame.
 dependencies
 no runtime dependencies. everything uses electron or node's standard library. the only dev dependencies are electron itself and electron-builder for packaging.
+
+# build kirigraph from source
+
+inside of here, you will get a script that you can use to build kirigraph from source. doing it is easy because of how low the code-amount is.
 ```
 git clone https://github.com/Kiritoasty/kirigraph.git
 cd kirigraph
