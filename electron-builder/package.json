@@ -1,0 +1,82 @@
+{
+  "name": "kirigraph",
+  "version": "1.0.0",
+  "description": "KiriGraph - A minimal & optimal text editor",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.kirigraph.editor",
+    "productName": "KiriGraph",
+    "icon": "icon.ico",
+    "win": {
+      "icon": "icon.ico",
+      "target": "nsis",
+      "fileAssociations": [
+        {
+          "ext": "txt",
+          "name": "Text Document",
+          "description": "Text Document",
+          "role": "Editor"
+        },
+        {
+          "ext": "md",
+          "name": "Markdown File",
+          "description": "Markdown File",
+          "role": "Editor"
+        },
+        {
+          "ext": "js",
+          "name": "JavaScript File",
+          "description": "JavaScript File",
+          "role": "Editor"
+        },
+        {
+          "ext": "json",
+          "name": "JSON File",
+          "description": "JSON File",
+          "role": "Editor"
+        },
+        {
+          "ext": "html",
+          "name": "HTML File",
+          "description": "HTML File",
+          "role": "Editor"
+        },
+        {
+          "ext": "css",
+          "name": "CSS File",
+          "description": "CSS File",
+          "role": "Editor"
+        },
+        {
+          "ext": "log",
+          "name": "Log File",
+          "description": "Log File",
+          "role": "Editor"
+        },
+        {
+          "ext": "env",
+          "name": "Environment File",
+          "description": "Environment File",
+          "role": "Editor"
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
+      "installerHeaderIcon": "icon.ico"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.0.0"
+  }
+}
